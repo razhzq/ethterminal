@@ -12,6 +12,8 @@ import logo from './assets/logobg.png'
 import { GoLinkExternal } from 'react-icons/go'
 import './App.css'
 
+import { Link } from 'react-router-dom';
+
 import { BsGearFill } from 'react-icons/bs'
 
 import { PieChart } from 'react-minimal-pie-chart';
@@ -148,7 +150,9 @@ function App() {
                 <li className=' w-[50%] p-3 m-3 border-red-50 bg-gradient-to-tr from-cardinGreen to-cardingGreenLight rounded-full shadow-xl hover:shadow-indigo-500/40'>Dashboard</li>
                 <li className=' w-[50%] p-3 m-3 border-red-500  bg-gradient-to-tr from-cardinGreen to-cardingGreenLight rounded-full shadow-xl hover:shadow-indigo-500/40'>Staking</li>
                 <li className=' w-[50%] p-3 m-3 border-red-500  bg-gradient-to-tr from-cardinGreen to-cardingGreenLight rounded-full shadow-xl hover:shadow-indigo-500/40'>Swap</li>
-                <li className=' w-[50%] p-3 m-3 border-red-500  bg-gradient-to-tr from-cardinGreen to-cardingGreenLight rounded-full shadow-xl hover:shadow-indigo-500/40'>Trading</li>
+                <Link className='w-[50%] route' to="/trading">
+                <li className=' w-[100%] p-3 my-3 mx-auto border-red-500  bg-gradient-to-tr from-cardinGreen to-cardingGreenLight rounded-full shadow-xl hover:shadow-indigo-500/40'>Trading</li>
+                </Link>
              </ul>
           </div>
 

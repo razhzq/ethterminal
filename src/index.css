@@ -17,7 +17,6 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #F1FAEE;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -25,21 +24,28 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
+
+/*Added not Selector to exclude link tags(routing)*/
+a:not(.route) {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
 }
-a:hover {
+a:not(.route):hover {
   color: #535bf2;
 }
 
-body {
+/* body {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+} */
+
+body{
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -77,4 +83,48 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/*Resets*/
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*Trading section*/
+
+.trading__section{
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  color: black;
+}
+
+/*Header section*/
+.header__container{
+  color: black;
+  min-width: 5rem;
+  padding:2rem 4rem;
+}
+
+.header__container .left > h2{
+  cursor: pointer;
+}
+
+.header__container .right a{
+  color: black;
+}
+
+.header__container .right button{
+  background-color: #535bf2;
+}
+
+/*Layout sec*/
+.layout__box{
+  max-width: 47rem;
+  margin: 0 auto;
 }

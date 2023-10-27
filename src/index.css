@@ -7,6 +7,9 @@
    width: 100vw;
 }
 
+html{
+  background-color: white;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,7 +19,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #F1FAEE;
+  /* background-color: #F1FAEE; */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -87,8 +90,20 @@ button:focus-visible {
 
 /*Resets*/
 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
 ul{
   list-style: none;
+}
+
+li{
+  text-decoration: none;
 }
 
 a{
@@ -119,12 +134,35 @@ a{
   color: black;
 }
 
-.header__container .right button{
-  background-color: #535bf2;
-}
-
 /*Layout sec*/
 .layout__box{
+  margin: 10rem auto;
+  padding: 5rem;
   max-width: 47rem;
-  margin: 0 auto;
+  border: black solid 1px;
+  min-height: 38rem;
+  background-color: #ffffff;
+  color: black;
+}
+
+.layout__box .leverage-count{
+  background-color: white;
+  border: black solid 1px;
+}
+
+.btn{
+  background-color: #535bf2;
+  border-radius: 0.50rem;
+  color: white;
+  font-weight: 500;
+}
+
+.btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.85;
+}
+
+.btn:active{
+  background-color: white;
+  color:#535bf2;
 }

@@ -12,7 +12,7 @@ function Header() {
           <Link to="/">DashBoard</Link>
           <Link to="/">Staking</Link>
           <Link to='/'>Swap</Link>
-          <button className='text-[1.25rem]'>Connect</button>
+          <button className='text-[1.25rem] btn'>Connect</button>
           </div>
       </div>);
 }

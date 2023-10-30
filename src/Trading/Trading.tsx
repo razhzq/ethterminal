@@ -4,8 +4,7 @@ import Layout from './Components/Layout.tsx';
 
 const Trading = () => {
   return (
-    <div className='trading__section'>
-       <Header/>
+    <div className='trading__section bg-cardinGreen'>
        <Layout/>
     </div>
   )

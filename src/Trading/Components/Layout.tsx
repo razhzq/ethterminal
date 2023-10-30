@@ -29,19 +29,19 @@ const Layout = () => {
     setLeverage(closestValue);
   };
   return (
-    <div className='layout__box'>
-       <Select options={select1} placeholder="Select your asset pair" defaultValue={asset} onChange={setAsset}/>
+    <div className='layout__box bg-cardingGreenLight rounded-lg'>
+       <Select className=' text-black' options={select1} placeholder="Select your asset pair" defaultValue={asset} onChange={setAsset}/>
           <div className="flex flex-col  gap-5">
             <p className="text-md text-black font-mainRegular"></p>
             <div className="w-full grid grid-cols-1 sm:grid-cols-[120px,auto] gap-6 items-center">
               <input type="number" defaultValue="0" placeholder="0" className="bg-transparent outline-none text-[46px] md:text-[68px] text-blue font-mainBold"/>
-              <Select options={select2} placeholder="Select your trading position" defaultValue={isLong} onChange={setIsLong}/>
+              <Select className=' text-black' options={select2} placeholder="Select your trading position" defaultValue={isLong} onChange={setIsLong}/>
             </div>
 
             <div className='p-2'>
               <div className='flex justify-between items-center'>
                 <p className='text-[18px] font-bold'>Leverage <span className='text-[18px] font-normal'>(2x~150x)</span></p>
-                  <input className='w-[100px] text-center py-2 text-[18px] font-bold rounded-[4px] leverage-count' 
+                  <input className='w-[100px] text-center py-2 text-[18px] font-bold rounded-[4px] leverage-count text-black' 
                   min={2} max={150} type="number" value={leverage} 
                   onChange={(e) => setLeverage(e.target.value)} />
               </div>
@@ -65,7 +65,6 @@ const Layout = () => {
               </div>
             </div>
               <div className='flex flex-col pt-4 gap-5'>
-                <button className='btn text-[1.25rem]'>Connect Wallet</button>
                 <button className='btn text-[1.25rem]'>Trade</button>
               </div>
           </div>

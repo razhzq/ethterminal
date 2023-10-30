@@ -114,8 +114,7 @@ a{
 
 .trading__section{
   height: 100%;
-  width: 100%;
-  background-color: #ffffff;
+  width: 80%;
   color: black;
 }
 
@@ -141,8 +140,7 @@ a{
   max-width: 47rem;
   border: black solid 1px;
   min-height: 38rem;
-  background-color: #ffffff;
-  color: black;
+  color: white;
 }
 
 .layout__box .leverage-count{

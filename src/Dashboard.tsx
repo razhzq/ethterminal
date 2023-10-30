@@ -109,7 +109,7 @@ function Dashboard() {
 
 
     const getERC20Balance = async () => {
-        const data = await axios.get(`https://api.chainbase.online/v1/account/tokens?chain_id=1&address=0xBE1c17a4b10cf28E343AEa4B118420F637D95dcd&limit=5&page=1`, {
+        const data = await axios.get(`https://api.chainbase.online/v1/account/tokens?chain_id=1&address=${walletAddress}&limit=5&page=1`, {
           headers: {
             'x-api-key': api_key,
             'accept': 'application/json'
@@ -126,7 +126,7 @@ function Dashboard() {
     }
 
     const getNativeTokenBalance = async () => {
-      const data = await axios.get(`https://api.chainbase.online/v1/account/balance?chain_id=1&address=0xBE1c17a4b10cf28E343AEa4B118420F637D95dcd`, {
+      const data = await axios.get(`https://api.chainbase.online/v1/account/balance?chain_id=1&address=${walletAddress}`, {
         headers: {
           'x-api-key': api_key,
           'accept': 'application/json'
@@ -140,7 +140,7 @@ function Dashboard() {
     }
 
     const getNFTBalance = async () => {
-      const data = await axios.get(`https://api.chainbase.online/v1/account/nfts?chain_id=1&address=0xBE1c17a4b10cf28E343AEa4B118420F637D95dcd&page=1&limit=5`, {
+      const data = await axios.get(`https://api.chainbase.online/v1/account/nfts?chain_id=1&address=${walletAddress}&page=1&limit=5`, {
         headers: {
           'x-api-key': api_key,
           'accept': 'application/json'
